@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
+    <div class="select">
+            <div class="buttons">
+            <button id="rock"><img src="./images/rock.png" style="height: 40px;width: 40px;"> rock</button>
+            <button id="paper"><img src="./images/paper.jpg"style="height: 40px;width: 40px;">Paper </button>
+            <button id="scissor"><img src="./images/scissor.png"style="height: 40px;width: 40px;">Scissor </button>
+            </div>
+            <div id="text_container">
+                <p id="win_count">wins : 0</p>
+                <p id="loose_count">loose : 0</p>
+                <p id="tie_count">ties : 0</p>
+            </div>
+            <div id="chance">
+                <p id="chances_left">Chances left : 5</p>
+            </div>
+            <div id="win_loss">
+                <p id="winlose_text"></p>
+            </div>
+
+            <button id="reset_btn">Reset</button>
+    </div>
 </body>
 </html>
